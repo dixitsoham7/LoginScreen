@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jsbacki"
+    tools:context="com.srm.sohamdixit.loginscreen.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/app"
+                android:textColor="@color/colorRed"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/dev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/dev"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/acad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="@string/acad"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/otp"
+                android:layout_below="@+id/dev"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="59dp"
+                android:background="@drawable/input_outline"
+                android:fontFamily="@font/montserrat"
+                android:hint="Enter Email"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="33dp"
+                android:background="@drawable/input_outline"
+                android:fontFamily="@font/montserrat"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorRed"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/reg"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/about"
+                android:layout_below="@+id/otp"
+                android:layout_marginTop="37dp"
+                android:background="@drawable/buttonstyle"
+                android:fontFamily="@font/montserrat"
+                android:text="LogIn"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/about"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonstyle"
+                android:fontFamily="@font/montserrat"
+                android:text="About Me"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/about"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="34dp"
+                android:clickable="true"
+                android:fontFamily="@font/montserrat"
+                android:text="Not a member? Sign up now"
+                android:textColor="@color/colorRed"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
